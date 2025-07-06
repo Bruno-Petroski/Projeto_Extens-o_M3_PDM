@@ -10,10 +10,8 @@ class trilha : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_trilha)
 
-        // Referencia o bloco com ID "blocoCriatividade"
         val criatividade = findViewById<View>(R.id.blocoCriatividade)
 
-        // Define a ação ao clicar
         criatividade.setOnClickListener {
             val intent = Intent(this, Quiz::class.java)
             startActivity(intent)

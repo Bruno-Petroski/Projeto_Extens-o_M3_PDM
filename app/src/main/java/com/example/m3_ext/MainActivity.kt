@@ -14,14 +14,12 @@ class MainActivity : AppCompatActivity() {
         enableEdgeToEdge()
         setContentView(R.layout.activity_main)
 
-        // Ajusta padding para system bars
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
 
-        // 🔗 Conectar botão "Começar Jornada" à próxima tela
         val botao = findViewById<Button>(R.id.btnComecar)
         botao.setOnClickListener {
             val intent = Intent(this, trilha::class.java)

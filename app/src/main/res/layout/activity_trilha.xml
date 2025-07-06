@@ -11,7 +11,6 @@
         android:layout_height="wrap_content"
         android:orientation="vertical">
 
-        <!-- Título -->
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -30,7 +29,6 @@
             android:layout_gravity="center_horizontal"
             android:layout_marginTop="4dp" />
 
-        <!-- Progresso -->
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -49,7 +47,6 @@
             android:progressTint="#FF00C8"
             android:layout_marginTop="4dp" />
 
-        <!-- BLOCO 1 - ESQUERDA -->
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -93,7 +90,6 @@
                 android:layout_height="1dp" />
         </LinearLayout>
 
-        <!-- BLOCO 2 - DIREITA -->
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -140,7 +136,6 @@
             </LinearLayout>
         </LinearLayout>
 
-        <!-- BLOCO 3 - ESQUERDA -->
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -184,7 +179,6 @@
                 android:layout_height="1dp" />
         </LinearLayout>
 
-        <!-- BLOCO 4 - DIREITA -->
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -230,7 +224,6 @@
             </LinearLayout>
         </LinearLayout>
 
-        <!-- Frase final -->
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
