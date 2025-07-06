@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F1F9FF"
+    android:padding="24dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <!-- Barra superior -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="16dp">
+
+            <ImageView
+                android:id="@+id/btnVoltar"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/ic_back"
+                android:contentDescription="Voltar" />
+
+            <ProgressBar
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="0dp"
+                android:layout_height="8dp"
+                android:layout_weight="1"
+                android:layout_marginStart="12dp"
+                android:layout_marginEnd="12dp"
+                android:progress="33"
+                android:max="100"
+                android:progressTint="#3CC96A"
+                android:backgroundTint="#DDDDDD" />
+
+        </LinearLayout>
+
+        <!-- Card da pergunta -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/bg_question_card"
+            android:padding="24dp"
+            android:layout_marginBottom="24dp"
+            android:elevation="4dp"
+            android:clipToOutline="true">
+
+            <TextView
+                android:id="@+id/tvPergunta"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Qual é a melhor forma de expressar criatividade através da arte?"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:layout_marginBottom="24dp" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnOpcao1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Copiar exatamente o que vemos"
+                android:textColor="#000000"
+                android:textSize="14sp"
+                android:layout_marginBottom="12dp"
+                android:padding="12dp"
+                android:elevation="2dp"
+                android:backgroundTint="#FFFFFF"
+                app:strokeWidth="1dp"
+                app:strokeColor="#CCCCCC"
+                app:cornerRadius="0dp" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnOpcao2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Experimentar com cores e formas diferentes"
+                android:textColor="#000000"
+                android:textSize="14sp"
+                android:layout_marginBottom="12dp"
+                android:padding="12dp"
+                android:elevation="2dp"
+                android:backgroundTint="#FFFFFF"
+                app:strokeWidth="1dp"
+                app:strokeColor="#CCCCCC"
+                app:cornerRadius="0dp" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnOpcao3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Seguir sempre as regras tradicionais"
+                android:textColor="#000000"
+                android:textSize="14sp"
+                android:layout_marginBottom="12dp"
+                android:padding="12dp"
+                android:elevation="2dp"
+                android:backgroundTint="#FFFFFF"
+                app:strokeWidth="1dp"
+                app:strokeColor="#CCCCCC"
+                app:cornerRadius="0dp" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnOpcao4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Usar apenas materiais caros"
+                android:textColor="#000000"
+                android:textSize="14sp"
+                android:layout_marginBottom="12dp"
+                android:padding="12dp"
+                android:elevation="2dp"
+                android:backgroundTint="#FFFFFF"
+                app:strokeWidth="1dp"
+                app:strokeColor="#CCCCCC"
+                app:cornerRadius="0dp" />
+
+        </LinearLayout>
+
+        <!-- Botão Verificar -->
+        <Button
+            android:id="@+id/btnVerificar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Verificar"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:backgroundTint="#8895A7"
+            android:layout_marginBottom="24dp" />
+
+        <!-- Rodapé -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pergunta 1 de 3"
+            android:textColor="#444444"
+            android:textSize="14sp"
+            android:layout_gravity="center_horizontal" />
+
+        <TextView
+            android:id="@+id/tvPontuacao"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pontuação: 0/3"
+            android:textColor="#FF9900"
+            android:textSize="14sp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="4dp" />
+    </LinearLayout>
+</ScrollView>
